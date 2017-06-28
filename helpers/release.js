@@ -13,3 +13,11 @@ const options = {};
 
 require('total.js').http('release', options);
 // require('total.js').cluster.http(5, 'release', options);
+    
+// for HTTPS use bellow code
+
+//options.https = {
+//    cert: fs.readFileSync(<path-to-certificate>),
+//    key: fs.readFileSync(<path-to-key>)
+//};
+//require('total.js').https('release', options);
